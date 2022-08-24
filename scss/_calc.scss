@@ -1,0 +1,237 @@
+.calc {
+    margin-top: 60px;
+    width: 100%;
+    // .calc__container
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        h2{
+            font-size: 45px;
+            font-weight: 700;
+        }
+    }
+
+    // .calc__dfContainer
+    &__dfContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 80px;
+    }
+
+    // .calc__calculate
+    &__calculate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    // .calc__result
+    &__result{
+        span{
+            font-size: 18px;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: end;
+        }
+    }
+
+    // .calc__support
+    &__support{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        p{
+            font-size: 16px;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 35px;
+            font-size: 16px;
+            background-color: rgb(253, 55, 0);
+            color: #fff;
+            border: 1px solid #626262;
+            border-radius: 5px;
+        }
+    }
+    input , &__material{
+        padding-left: 10px;
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    // .calc__calcButton
+    &__calcButton{
+        margin-top: 60px;
+        width: 100%;
+        height: 65px;
+        border-radius: 5px;
+        font-size: 18px;
+        background: #626262;
+        color: #fff;
+    }
+    // .calc__width
+    &__width {}
+
+	// .calc__height
+    &__height {}
+
+    //media
+    @media (max-width:992px) {
+        margin-top: 50px;
+        // .calc__container
+        &__container {
+            h2{
+                font-size: 35px;
+            }
+        }
+
+        // .calc__dfContainer
+        &__dfContainer {
+            margin-top: 60px;
+        }
+
+        // .calc__result
+        &__result{
+            span{
+                font-size: 16px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    
+        // .calc__support
+        &__support{
+            p{
+                font-size: 12px;
+            }
+            a{
+                width: 200px;
+                height: 35px;
+                font-size: 12px;
+            }
+        }
+        input , &__material{
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            
+        }
+    
+        // .calc__calcButton
+        &__calcButton{
+            height: 60px;
+            font-size: 16px;
+        }
+    }
+    @media (max-width:768px) {
+        margin-top: 50px;
+        // .calc__container
+        &__container {
+            h2{
+                font-size: 25px;
+            }
+        }
+
+        // .calc__dfContainer
+        &__dfContainer {
+            margin-top: 50px;
+        }
+
+        // .calc__result
+        &__result{
+            text-align: end;
+            span{
+                font-size: 14px;
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+    
+        // .calc__support
+        &__support{
+            p{
+                font-size: 12px;
+            }
+            a{
+                width: 200px;
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+        input , &__material{
+            width: 200px;
+            height: 30px;
+            font-size: 12px;
+            
+        }
+    
+        // .calc__calcButton
+        &__calcButton{
+            height: 50px;
+            font-size: 16px;
+        }
+    }
+    @media (max-width:500px) {
+        margin-top: 40px;
+        // .calc__container
+        &__container {
+            h2{
+                font-size: 18px;
+            }
+        }
+
+        // .calc__dfContainer
+        &__dfContainer {
+            margin-top: 30px;
+        }
+
+        // .calc__result
+        &__result{
+            text-align: end;
+            span{
+                font-size: 12px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    
+        // .calc__support
+        &__support{
+            p{
+                font-size: 12px;
+            }
+            a{
+                width: 200px;
+                height: 30px;
+                font-size: 10px;
+            }
+        }
+        input , &__material{
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+            
+        }
+    
+        // .calc__calcButton
+        &__calcButton{
+            height: 45px;
+            font-size: 16px;
+        }
+    }
+}

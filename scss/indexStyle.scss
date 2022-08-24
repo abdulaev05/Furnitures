@@ -1,0 +1,21 @@
+@import 'zero';
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto
+}
+@import 'header';
+.main{
+    flex: 1 1 auto;
+}
+@import 'indexNavBar';
+@import 'backgroundSwiper';
+@import 'services';
+@import 'price';
+@import 'calc';
+@import 'footer'
+
+

@@ -1,0 +1,67 @@
+.footer{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-top: 60px;
+    &__services{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .item1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__end{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid grey;
+        margin-top: 30px;
+        padding: 40px 0;
+        .avtor{
+            width: 211px;
+        }
+        .icons{
+            display: flex;
+            gap: 5px;
+
+        }
+        .conditions{
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
+}
+.instagram , .facebook , .twitter , .whatsapp{
+    border-radius: 50%;
+    background-color: #dfdfdf;
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.6 , 0.6)
+    }
+}
+.instagram:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.facebook:hover , .twitter:hover{
+  background: #00acee;
+}
+.whatsapp:hover{
+  background: #43d854;
+}
+@media (max-width:992px){
+    .instagram{
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    .facebook , .twitter{
+      background: #00acee;
+    }
+    .whatsapp{
+      background: #43d854;
+    }
+}

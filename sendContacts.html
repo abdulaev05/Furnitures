@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/sendContacts.css">
+    <title>Отправка данныйх</title>
+</head>
+<body>
+    <div class="form">
+        <form action="mail.php" id="form" class="form__body" method="POST">
+            <h1 class="form__title">Отправить данные для обратной связи</h1>
+            <div class="form__item">
+                <label for="formName" class="form__label">Имя</label>
+                <input type="text" name="user_name" id="formName" class="form__input" required>
+            </div>
+            <div class="form__item">
+                <label for="formPhone" class="form__label">Номер телефона</label>
+                <input type="text" name="user_phone" id="formPhone" class="form__input tel" required>
+            </div>
+            <div class="form__item">
+                <label for="cities" class="form__label">Выберите город</label>
+                <select name="cities" id="cities" class="form__input">
+                    <option value="">г.Каспийск</option>
+                    <option value="">г.Ростов-на-Дону</option>
+                </select>
+            </div>
+            <div class="form__item">
+                <label for="furnitureHeight" class="form__label">Высота мебели в сантиметрах</label>
+                <input type="number" name="furnitureHeight" id="furnitureHeight" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="furnitureWidth" class="form__label">Ширина мебели в сантиметрах</label>
+                <input type="number" name="furnitureWidth" id="furnitureWidth" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="message" class="form__label">Сообщение</label>
+                <textarea name="message" id="message" class="form__input"></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" checked id="checkbox" class="checkbox__input" required>
+                <label for="checkbox" class="checkbox__label">Я даю свое согласие на обработку перснальных данных в соответствии с <a href="#">условиями</a></label>
+            </div>
+            <button type="submit" class="form__send">Отправить</button>
+        </form>
+    </div>
+
+    <script src="js/inputPhone.js"></script>
+</body>
+</html>
